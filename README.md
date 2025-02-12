@@ -2,42 +2,43 @@
 
 ## Introdução
 
-Utilizamos este desafio para avaliar a qualidade do seu código, arquitetura, a forma que você organiza os seus pensamentos dentro do repositório e muitas outras coisas. Por isso, sinta-se à vontade e dê o seu melhor!
+Neste desafio, o objetivo é criar um aplicativo simples que exibe os **personagens da Marvel**. Para isso, você irá usar **HTML**, **CSS** e **JavaScript** para buscar as informações de personagens através de uma API e mostrar essas informações de uma forma bem organizada.
 
-Neste desafio, você irá desenvolver um aplicativo que deve mostrar os **personagens da Marvel**. Utilizando **HTML**, **CSS** e **JavaScript**, o objetivo é consumir dados de uma API e exibir uma lista de personagens com as informações necessárias, de maneira intuitiva e bem estruturada.
+Nosso objetivo com esse desafio é entender como você estrutura o código, como resolve problemas e como organiza seu trabalho. Portanto, sinta-se à vontade e mostre o seu melhor!
 
-## Requisitos
+## O que é necessário fazer?
 
-Os requisitos básicos serão usados para avaliar como você lida com os seguintes itens. A falta de qualquer um desses requisitos comprometerá a sua avaliação final:
+Aqui estão algumas tarefas que você precisa completar para que seu projeto seja considerado pronto:
 
-- **Consumo de API** para popular a lista de personagens.
-- **Exibição das imagens, nome e descrição** dos personagens.
-- **Scroll infinito**: Carregar mais personagens à medida que o usuário rolar a página.
-- **Design responsivo** utilizando CSS para garantir que o aplicativo seja bem apresentado em diversos dispositivos.
-- **Boa arquitetura de código**: Manter o código organizado e limpo para fácil manutenção e extensibilidade.
+- **Consumir uma API**: Buscar dados da Marvel (como nome, descrição e imagem dos personagens).
+- **Mostrar as imagens e informações** dos personagens de forma clara.
+- **Scroll infinito**: O aplicativo deve carregar mais personagens automaticamente quando o usuário rolar para baixo.
+- **Design responsivo**: Usar CSS para garantir que o aplicativo funcione bem em diferentes dispositivos (computadores, celulares, etc.).
+- **Organizar bem o código**: Mantenha seu código limpo e fácil de entender para facilitar futuras mudanças.
 
-## Fases do Projeto
+## Passos para fazer o projeto
 
-### Fase 1: API - Ler a Documentação e Implementar a Chamada da API
+### Fase 1: API - Buscar as Informações
 
-A API que deverá ser utilizada para popular as listas de personagens é a **Marvel API**. O endpoint relevante para este desafio é `/v1/public/characters`. A partir dessa API, você deve realizar as requisições para obter os dados dos personagens, como **nome**, **descrição** e **imagens**.
+A API que você vai usar para buscar as informações dos personagens é a **Marvel API**. Você vai precisar usar essa API para pegar dados como **nome**, **descrição** e **imagem** dos personagens. A documentação da API vai te ajudar a entender como fazer isso.
 
-### Fase 2: Ler Dados e Persistir Localmente
+### Fase 2: Armazenar os Dados
 
-Aplique um mecanismo para armazenar os dados localmente para garantir que a interface possa ser carregada rapidamente, sem necessidade de novas requisições a cada acesso. Pode-se utilizar o `localStorage` ou outras abordagens simples em JavaScript.
+Depois de pegar os dados dos personagens, armazene-os de forma que, quando o usuário acessar o aplicativo novamente, a informação apareça rapidamente, sem precisar buscar tudo de novo. Você pode usar algo simples, como o `localStorage` para isso.
 
-### Fase 3: Tela de Lista
+### Fase 3: Criar a Tela com a Lista de Personagens
 
-Crie uma tela que exibirá a lista de personagens. A tela deve ser responsiva e exibir cada personagem com as informações mais relevantes, como o **nome**, **descrição curta** e a **imagem** (a partir das URLs fornecidas pela API).
+Crie uma tela onde os personagens serão exibidos. Cada personagem deve mostrar informações como o **nome**, uma **descrição curta** e a **imagem** (usando a URL da imagem fornecida pela API). A tela precisa se ajustar bem tanto em celulares quanto em computadores.
 
 ### Fase 4: Tela de Detalhes
 
-Quando o usuário clicar em um personagem, ele será levado a uma tela com mais detalhes sobre aquele personagem, incluindo informações como **biografia completa**, **primeira aparição** e outros dados relevantes.
+Quando o usuário clicar em um personagem, ele deve ser levado para uma página onde ele verá mais informações sobre o personagem, como sua **biografia completa** e **primeira aparição**.
 
-### Fase 5: Entrega
+### Fase 5: Entregar o Projeto
 
-Ao finalizar, envie o desafio:
+Quando terminar o projeto, siga estes passos:
 
-- Crie um **fork público** deste repositório.
-- Siga o fluxo de desenvolvimento do **gitflow**.
-- **Faça o pull request** para este repositório.
+1. **Crie um fork público** deste repositório.
+2. **Trabalhe no seu código** e organize suas mudanças de acordo com o **gitflow**.
+3. **Faça um pull request** para o repositório original para que possamos ver o seu trabalho.
+
