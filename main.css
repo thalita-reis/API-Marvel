@@ -1,0 +1,115 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#menu ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.comics-section {
+  margin: 40px;
+  text-align: center;
+}
+
+.comics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.comics-list .comic-item {
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.comics-list img {
+  width: 100%;
+  height: auto;
+}
+
+.comic-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.comic-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.comic-item a {
+  display: block;
+  background: #d32f2f;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.comic-item a:hover {
+  background: #b71c1c;
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+/* Dispositivos móveis */
+@media (max-width: 768px) {
+  .comics-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .comics-list .comic-item {
+      width: 90%;
+  }
+}
