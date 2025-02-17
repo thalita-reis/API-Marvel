@@ -1,7 +1,10 @@
-// API
-const apiKey = '4b6088749d91207de564df208e741a87';  
-const privateKey = '3c29d4ea5ba871c14652a9dce4572e5f538a4990'; 
-const baseUrl = 'https://gateway.marvel.com/v1/public/comics';
+require('dotenv').config();
+const CryptoJS = require('crypto-js');
+
+// Usando as variáveis de ambiente no código
+const apiKey = process.env.API_KEY;
+const privateKey = process.env.PRIVATE_KEY;
+const baseUrl = process.env.BASE_URL;
 
 // Data/hora para autenticação
 const timestamp = new Date().getTime(); 
