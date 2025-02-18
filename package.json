@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.4.7",
+    "react-scripts": "^5.0.1",
+    "vite": "^4.0.0",
+    "y": "file:"
+  },
+  "devDependencies": {
+    "vite-plugin-html": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
