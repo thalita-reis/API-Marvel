@@ -40,4 +40,4 @@ Quando terminar o projeto, siga estes passos:
 
 1. **Crie um fork público** deste repositório.
 2. **Trabalhe no seu código** e organize suas mudanças de acordo com o **gitflow**.
-3. **Faça um pull request** para o repositório original para que possamos ver o seu trabalho.
+3. **Faça um pull request** para o repositório original para que possamos ver o seu trabalho

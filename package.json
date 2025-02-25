@@ -1,22 +1,33 @@
 {
-  "name": "y",
+  "name": "marvel-store_teste",
   "version": "1.0.0",
+  "description": "Este projeto é sobre como usar uma API da Marvel usando JavaScript, Html , Css",
   "main": "script.js",
+  "author": "Thalita Reis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thalita-reis/API-Marvel"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
+    "esbuild": "^0.25.0",
+    "marvel-store_teste": "file:",
+    "my-project": "file:",
+    "postcss": "^8.5.3",
     "react-scripts": "^5.0.1",
-    "vite": "^4.0.0",
-    "y": "file:"
+    "serialize-javascript": "^6.0.2",
+    "vite": "^6.2.0",
+    "webpack-dev-server": "^5.2.0"
   },
   "devDependencies": {
     "vite-plugin-html": "^2.0.0"

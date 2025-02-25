@@ -3,33 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Explore os quadrinhos da Marvel. Confira as últimas edições, detalhes e mais!">
     <title>Marvel Comics - Quadrinhos</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lucide@0.206.0/dist/lucide.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script> <!-- Biblioteca MD5 -->
 </head>
 <body>
     <header class="header">
-        <h1>Marvel Comics</h1>
-        <nav id="menu">
+        <h1 class="logo">Marvel Comics</h1> <!-- Adicionada a classe logo -->
+        <nav id="menu" aria-label="Menu de navegação">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#comics">Quadrinhos</a></li>
-                <li><a href="#about">Sobre</a></li>
+                <li><a href="#home">Banda desenhada</a></li>
+                <li><a href="#characters">Caracteres</a></li>
+                <li><a href="#series">Série</a></li>
+                <li><a href="#events">Eventos</a></li>
             </ul>
         </nav>
+        <div class="cart-icon">
+            <a href="#"><img src="cart-icon.png" alt="Carrinho de compras"> <span>2</span></a>
+        </div>
     </header>
 
     <section id="comics" class="comics-section">
-        <h2>Quadrinhos da Marvel</h2>
-      
+        <h2>Marvel Comics</h2>
         <div id="comics-list" class="comics-list"></div>
-        <p id="error-message" style="color: red; text-align: center;"></p>
+        <div class="pagination">
+            <button id="prev">Anterior</button>
+            <button id="next">Próximo</button>
+        </div>
     </section>
 
-    <footer>
-        <p>Dados fornecidos pela Marvel. © 2014 Marvel. <br> 
-            <a href="http://marvel.com" target="_blank">Visite Marvel.com</a>
-        </p>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Sobre a Marvel Comics</h3>
+            <p>Seu balcão único para todos os quadrinhos da Marvel. Descubra histórias incríveis com seus super-heróis favoritos.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#">Últimos lançamentos</a></li>
+                <li><a href="#">Mais vendidos</a></li>
+                <li><a href="#">Guia de Personagens</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>E-mail: <a href="mailto:support@marvel-comics.com">thalita_reis@marvel-comics.com</a></p>
+            <p>Telefone: (011) 94808-0600</p>
+            <p>Endereço: IPIRANGA, SP</p>
+        </div>
+        <p class="footer-bottom">© 2025 Marvel Comics. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
