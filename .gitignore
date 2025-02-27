@@ -1,1 +1,3 @@
+# Ignorar o arquivo .env com as credenciais da API
+.env
 node_modules

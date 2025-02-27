@@ -12,9 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script> <!-- Biblioteca MD5 -->
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header class="header">
-        <h1 class="logo">Marvel Comics</h1> <!-- Adicionada a classe logo -->
-        <nav id="menu" aria-label="Menu de navegação">
+        <h1 class="logo">Marvel Comics</h1>
+        <nav id="menu">
             <ul>
                 <li><a href="#home">Banda desenhada</a></li>
                 <li><a href="#characters">Caracteres</a></li>
@@ -22,14 +23,20 @@
                 <li><a href="#events">Eventos</a></li>
             </ul>
         </nav>
+        <!-- Carrinho de Compras -->
         <div class="cart-icon">
-            <a href="#"><img src="cart-icon.png" alt="Carrinho de compras"> <span>2</span></a>
+            <a href="#"><img src="./assets/shopping-cart.png" alt="Carrinho de compras"> <span>2</span></a>
         </div>
     </header>
 
+    <!-- Seção de Quadrinhos -->
     <section id="comics" class="comics-section">
         <h2>Marvel Comics</h2>
-        <div id="comics-list" class="comics-list"></div>
+        <div id="comics-list" class="comics-list">
+            <!-- Quadrinhos serão renderizados aqui -->
+        </div>
+
+        <!-- Paginação -->
         <div class="pagination">
             <button id="prev">Anterior</button>
             <button id="next">Próximo</button>

@@ -10,24 +10,24 @@ body {
   min-height: 100vh; /* Garantir que a altura da página ocupe toda a tela */
 }
 
-/* Cabeçalho */
+/* Header */
 header {
   background-color: #e30613; /* Cor de fundo vermelha */
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Estilo para o texto da logo */
+/* Logo */
 header .logo {
-  font-size: 2rem;
-  color: white; /* A cor do texto será branca */
-  font-weight: bold; /* Tornando o texto mais forte para destacar */
+  font-size: 1.5rem; /* Ajustando o tamanho da logo */
+  color: white; /* Cor da logo */
+  font-weight: bold;
   margin-left: 20px;
 }
 
-/* Estilo para o menu de navegação */
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -35,56 +35,81 @@ header nav ul {
   padding: 0;
 }
 
-/* Estilo para os itens do menu */
 header nav ul li {
   margin-right: 20px;
 }
 
-/* Estilo para os links no menu */
 header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
 }
 
-/* Estilo para o ícone de carrinho no cabeçalho */
 header .cart-icon {
   position: relative;
   margin-right: 20px;
 }
 
-/* Estilo para o ícone SVG do carrinho */
 header .cart-icon svg {
   width: 24px;
   height: 24px;
 }
 
-/* Estilo para o contador de itens no carrinho */
 header .cart-icon span {
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: #f1c40f;
   color: white;
   font-size: 12px;
   padding: 5px;
   border-radius: 50%;
 }
 
+/* Estilos para o ícone do carrinho */
+header .cart-icon {
+  position: relative;
+  width: px; /* Ajustando o tamanho do ícone do carrinho */
+  height: 40px; /* Ajustando o tamanho do ícone do carrinho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .cart-icon svg {
+  width: 30px; /* Tamanho do ícone do carrinho */
+  height: 24px; /* Tamanho do ícone do carrinho */
+  fill: white; /* Cor branca para o ícone */
+}
+
+/* Contagem de itens no carrinho */
+header .cart-icon span {
+  position: absolute;
+  top: -5px; /* Posição para cima */
+  right: -5px; /* Posição para a direita */
+    color: white; /* Cor do texto (número) */
+  font-size: 14px; /* Tamanho do número */
+  font-weight: bold; /* Tornando o número mais destacado */
+  width: 20px; /* Largura do círculo */
+  height: 20px; /* Altura do círculo */
+  border-radius: 50%; /* Tornando o círculo */
+  display: flex;
+  justify-content: center; /* Centralizando o número dentro do círculo */
+  align-items: center; /* Centralizando o número dentro do círculo */
+}
 /* Seção de Quadrinhos */
-#comics-section {
+.comics-section {
   padding: 20px;
-  text-align: center;
+  max-width: 1240px; 
+  margin: 0 auto; 
+  width: 100%; 
   flex: 1; /* Garantir que essa seção ocupe o máximo de espaço possível */
 }
 
-/* Título da seção de Quadrinhos */
-#comics-section h2 {
+.comics-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Lista de quadrinhos */
 #comics-list {
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +117,6 @@ header .cart-icon span {
   justify-content: center;
 }
 
-/* Estilo para cada item de quadrinho */
 .comic-item {
   width: 200px;
   background-color: white;
@@ -102,26 +126,22 @@ header .cart-icon span {
   border-radius: 10px;
 }
 
-/* Estilo para as imagens dos quadrinhos */
 .comic-item img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-/* Título do quadrinho */
 .comic-item h3 {
   font-size: 1.2rem;
   margin: 10px 0;
 }
 
-/* Descrição do quadrinho */
 .comic-item p {
   font-size: 1rem;
   color: #555;
 }
 
-/* Botão para adicionar ao carrinho */
 .comic-item a {
   display: inline-block;
   padding: 10px 20px;
@@ -132,18 +152,16 @@ header .cart-icon span {
   margin-top: 10px;
 }
 
-/* Efeito de hover no botão */
 .comic-item a:hover {
   background-color: #c30311;
 }
 
-/* Estilo para a paginação */
+/* Paginação */
 .pagination {
   margin-top: 20px;
   text-align: center;
 }
 
-/* Estilo para os botões de paginação */
 .pagination button {
   padding: 10px 20px;
   background-color: #e30613;
@@ -153,7 +171,6 @@ header .cart-icon span {
   cursor: pointer;
 }
 
-/* Efeito de hover nos botões de paginação */
 .pagination button:hover {
   background-color: #c30311;
 }
@@ -169,46 +186,38 @@ footer {
   margin-top: auto; /* Isso faz o rodapé ir para o final da página */
 }
 
-/* Seções dentro do rodapé */
 footer .footer-section {
   display: flex;
   flex-direction: column;
 }
 
-/* Título das seções no rodapé */
 footer .footer-section h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-/* Estilo para os parágrafos e listas no rodapé */
 footer .footer-section p, footer .footer-section ul {
   font-size: 0.9rem;
 }
 
-/* Estilo para a lista de links no rodapé */
 footer .footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-/* Estilo para os itens da lista no rodapé */
 footer .footer-section ul li {
   margin-bottom: 5px;
 }
 
-/* Estilo para os links dentro do rodapé */
 footer .footer-section ul li a {
   color: #9ca3af;
   text-decoration: none;
 }
 
-/* Efeito de hover nos links do rodapé */
 footer .footer-section ul li a:hover {
   color: #f1c40f;
 }
 
-/* Estilo para o rodapé inferior */
 footer .footer-bottom {
   grid-column: span 3;
   text-align: center;
@@ -216,13 +225,11 @@ footer .footer-bottom {
   font-size: 0.875rem;
 }
 
-/* Estilo para os links do rodapé */
 footer a {
   color: #9ca3af;
   text-decoration: none;
 }
 
-/* Efeito de hover nos links do rodapé */
 footer a:hover {
   color: #f1c40f;
 }
